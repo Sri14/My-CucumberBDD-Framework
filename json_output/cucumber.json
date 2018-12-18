@@ -1,18 +1,26 @@
 [
   {
     "line": 1,
+    "name": "Free CRM login feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "CRMlogin.feature"
+  },
+  {
+    "line": 1,
     "elements": [
       {
-        "line": 17,
+        "line": 3,
         "name": "Creating new contacts scenario",
         "description": "",
-        "id": "free-crm-create-contacts-feature;creating-new-contacts-scenario;;2",
+        "id": "deals-data-creation-feature;creating-new-contacts-scenario",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4239189188,
+              "duration": 4691921008,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +32,7 @@
           },
           {
             "result": {
-              "duration": 49618401,
+              "duration": 47051433,
               "status": "passed"
             },
             "line": 6,
@@ -36,36 +44,31 @@
           },
           {
             "result": {
-              "duration": 425215079,
+              "duration": 291051358,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters \"testsri\" and \"enter123\"",
+            "name": "user enters username and password",
             "match": {
-              "arguments": [
-                {
-                  "val": "testsri",
-                  "offset": 13
-                },
-                {
-                  "val": "enter123",
-                  "offset": 27
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_username_and_password(String,String)"
+              "location": "CRMLoginStepDef.user_enters_username_and_password(DataTable)"
             },
-            "matchedColumns": [
-              0,
-              1
+            "rows": [
+              {
+                "cells": [
+                  "testsri",
+                  "enter123"
+                ],
+                "line": 8
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7466176634,
+              "duration": 8759837790,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "user clicks on login button",
             "match": {
               "location": "CRMLoginStepDef.user_clicks_on_login_button()"
@@ -74,10 +77,10 @@
           },
           {
             "result": {
-              "duration": 5012643,
+              "duration": 5548764,
               "status": "passed"
             },
-            "line": 9,
+            "line": 11,
             "name": "user is on homepage",
             "match": {
               "location": "CRMLoginStepDef.user_is_on_homepage()"
@@ -86,470 +89,33 @@
           },
           {
             "result": {
-              "duration": 1479770622,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user moves to contacts page",
-            "match": {
-              "location": "CRMLoginStepDef.user_moves_to_contacts_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1417633220,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters contact detilas \"sri0\" and \"tata0\" and \"QA0\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sri0",
-                  "offset": 29
-                },
-                {
-                  "val": "tata0",
-                  "offset": 40
-                },
-                {
-                  "val": "QA0",
-                  "offset": 52
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_firstname_and_lastname_and_position(String,String,String)"
-            },
-            "matchedColumns": [
-              2,
-              3,
-              4
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 112127555,
+              "duration": 3133527384,
               "status": "passed"
             },
             "line": 12,
-            "name": "close browser",
+            "name": "user enters deal details and save",
             "match": {
-              "location": "CRMLoginStepDef.close_browser()"
+              "location": "CRMLoginStepDef.user_enters_deal_details_and_save(DataTable)"
             },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 18,
-        "name": "Creating new contacts scenario",
-        "description": "",
-        "id": "free-crm-create-contacts-feature;creating-new-contacts-scenario;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3723501737,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is already on login page",
-            "match": {
-              "location": "CRMLoginStepDef.user_is_already_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4577109,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "title of login page is Free CRM",
-            "match": {
-              "location": "CRMLoginStepDef.title_of_login_page_is_Free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 172017532,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters \"testsri\" and \"enter123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testsri",
-                  "offset": 13
-                },
-                {
-                  "val": "enter123",
-                  "offset": 27
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
+            "rows": [
+              {
+                "cells": [
+                  "testdeal",
+                  "1000",
+                  "20",
+                  "20"
+                ],
+                "line": 13
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7560862612,
+              "duration": 118463249,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "CRMLoginStepDef.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4856185,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user is on homepage",
-            "match": {
-              "location": "CRMLoginStepDef.user_is_on_homepage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1417249582,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user moves to contacts page",
-            "match": {
-              "location": "CRMLoginStepDef.user_moves_to_contacts_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1372763969,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters contact detilas \"sri1\" and \"tata1\" and \"QA1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sri1",
-                  "offset": 29
-                },
-                {
-                  "val": "tata1",
-                  "offset": 40
-                },
-                {
-                  "val": "QA1",
-                  "offset": 52
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_firstname_and_lastname_and_position(String,String,String)"
-            },
-            "matchedColumns": [
-              2,
-              3,
-              4
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 110392925,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "close browser",
-            "match": {
-              "location": "CRMLoginStepDef.close_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 19,
-        "name": "Creating new contacts scenario",
-        "description": "",
-        "id": "free-crm-create-contacts-feature;creating-new-contacts-scenario;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3559971792,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is already on login page",
-            "match": {
-              "location": "CRMLoginStepDef.user_is_already_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4382094,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "title of login page is Free CRM",
-            "match": {
-              "location": "CRMLoginStepDef.title_of_login_page_is_Free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 163005468,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters \"testsri\" and \"enter123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testsri",
-                  "offset": 13
-                },
-                {
-                  "val": "enter123",
-                  "offset": 27
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7491753969,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "CRMLoginStepDef.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4457709,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user is on homepage",
-            "match": {
-              "location": "CRMLoginStepDef.user_is_on_homepage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1456031302,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user moves to contacts page",
-            "match": {
-              "location": "CRMLoginStepDef.user_moves_to_contacts_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1297619912,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters contact detilas \"sri2\" and \"tata2\" and \"QA2\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sri2",
-                  "offset": 29
-                },
-                {
-                  "val": "tata2",
-                  "offset": 40
-                },
-                {
-                  "val": "QA2",
-                  "offset": 52
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_firstname_and_lastname_and_position(String,String,String)"
-            },
-            "matchedColumns": [
-              2,
-              3,
-              4
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 111909651,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "close browser",
-            "match": {
-              "location": "CRMLoginStepDef.close_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 20,
-        "name": "Creating new contacts scenario",
-        "description": "",
-        "id": "free-crm-create-contacts-feature;creating-new-contacts-scenario;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3360354816,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is already on login page",
-            "match": {
-              "location": "CRMLoginStepDef.user_is_already_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 49752486,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "title of login page is Free CRM",
-            "match": {
-              "location": "CRMLoginStepDef.title_of_login_page_is_Free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 345683931,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enters \"testsri\" and \"enter123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testsri",
-                  "offset": 13
-                },
-                {
-                  "val": "enter123",
-                  "offset": 27
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 13160165408,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "CRMLoginStepDef.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4493087,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user is on homepage",
-            "match": {
-              "location": "CRMLoginStepDef.user_is_on_homepage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1882135262,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user moves to contacts page",
-            "match": {
-              "location": "CRMLoginStepDef.user_moves_to_contacts_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1383465240,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters contact detilas \"sri3\" and \"tata3\" and \"QA3\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sri3",
-                  "offset": 29
-                },
-                {
-                  "val": "tata3",
-                  "offset": 40
-                },
-                {
-                  "val": "QA3",
-                  "offset": 52
-                }
-              ],
-              "location": "CRMLoginStepDef.user_enters_firstname_and_lastname_and_position(String,String,String)"
-            },
-            "matchedColumns": [
-              2,
-              3,
-              4
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 113534390,
-              "status": "passed"
-            },
-            "line": 12,
+            "line": 14,
             "name": "close browser",
             "match": {
               "location": "CRMLoginStepDef.close_browser()"
@@ -559,10 +125,10 @@
         ]
       }
     ],
-    "name": "Free CRM create contacts feature",
+    "name": "Deals data creation feature",
     "description": "",
-    "id": "free-crm-create-contacts-feature",
+    "id": "deals-data-creation-feature",
     "keyword": "Feature",
-    "uri": "contacts.feature"
+    "uri": "deals.feature"
   }
 ]

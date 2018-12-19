@@ -7,13 +7,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/Users/HomeMac/Documents/workspace/CucumberBDDFramework/src/main/java/bDDFeature/taging.feature",
+		features = "/Users/HomeMac/Documents/workspace/CucumberBDDFramework/src/main/java/bDDFeature/Hooks.feature",
 		glue = {"stepDefinitons"},
 		plugin = {"pretty","html:test-outout", "json:json_output/cucumber.json"},
 		dryRun = false,
 		monochrome = true,
-		strict = true,
-		tags = {"@~Regression", "@End2End"}
+		strict = true
+		//tags = {"@End2End"}
 	
 		)
 

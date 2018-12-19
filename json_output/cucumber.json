@@ -1,181 +1,50 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "New Deals usign DataTable Maps",
+        "line": 26,
+        "name": "Search a deal",
         "description": "",
-        "id": "creating-a-new-deal-using-datatable-maps;new-deals-usign-datatable-maps",
+        "id": "free-crm-application-testing;search-a-deal",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4481822315,
+              "duration": 113576659,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user is already on login page",
+            "line": 27,
+            "name": "Search deal test",
             "match": {
-              "location": "DealMapStepDef.user_is_already_on_login_page()"
+              "location": "TaggingStepDefs.search_deal_test()"
             },
             "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@Regression"
           },
           {
-            "result": {
-              "duration": 6509306,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "title of login page is Free CRM",
-            "match": {
-              "location": "DealMapStepDef.title_of_login_page_is_Free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 343102060,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters username and password",
-            "match": {
-              "location": "DealMapStepDef.user_enters_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "testsri",
-                  "enter123"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9209225111,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "DealMapStepDef.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5884408,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user is on homepage",
-            "match": {
-              "location": "DealMapStepDef.user_is_on_homepage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 172818179,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click on new deal",
-            "match": {
-              "location": "DealMapStepDef.user_click_on_new_deal()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8614360465,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters deal details and save",
-            "match": {
-              "location": "DealMapStepDef.user_enters_deal_details_and_save(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "title",
-                  "amount",
-                  "probability",
-                  "commission"
-                ],
-                "line": 13
-              },
-              {
-                "cells": [
-                  "testdeal1",
-                  "1000",
-                  "10",
-                  "10"
-                ],
-                "line": 14
-              },
-              {
-                "cells": [
-                  "testdeal2",
-                  "2000",
-                  "20",
-                  "20"
-                ],
-                "line": 15
-              },
-              {
-                "cells": [
-                  "testdeal3",
-                  "3000",
-                  "30",
-                  "30"
-                ],
-                "line": 16
-              },
-              {
-                "cells": [
-                  "testdeal4",
-                  "4000",
-                  "40",
-                  "40"
-                ],
-                "line": 17
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 117484732,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "close browser",
-            "match": {
-              "location": "DealMapStepDef.close_browser()"
-            },
-            "keyword": "Then "
+            "line": 25,
+            "name": "@End2End"
           }
         ]
       }
     ],
-    "name": "Creating a new deal using DataTable Maps",
+    "name": "Free CRM application testing",
     "description": "",
-    "id": "creating-a-new-deal-using-datatable-maps",
+    "id": "free-crm-application-testing",
     "keyword": "Feature",
-    "uri": "/Users/HomeMac/Documents/workspace/CucumberBDDFramework/src/main/java/bDDFeature/DealsMap.feature"
+    "uri": "/Users/HomeMac/Documents/workspace/CucumberBDDFramework/src/main/java/bDDFeature/taging.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@FunctionalTest"
+      }
+    ]
   }
 ]

@@ -7,12 +7,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/Users/HomeMac/Documents/workspace/CucumberBDDFramework/src/main/java/bDDFeature/DealsMap.feature",
+		features = "/Users/HomeMac/Documents/workspace/CucumberBDDFramework/src/main/java/bDDFeature/taging.feature",
 		glue = {"stepDefinitons"},
 		plugin = {"pretty","html:test-outout", "json:json_output/cucumber.json"},
 		dryRun = false,
 		monochrome = true,
-		strict = true
+		strict = true,
+		tags = {"@~Regression", "@End2End"}
 	
 		)
 
@@ -21,3 +22,6 @@ public class TestRunner {
 	
 
 }
+// OR  - {"@Regression, @End2End"} -- executes tests if either of the tags are present in  the scenarios
+// AND - {"@Regression", "@End2End"} -- only executes if both tags are present in the scenario
+// SKIP - {"@~Regression"} will skip the tag
